@@ -1,0 +1,31 @@
+{
+
+	"name": "NewNamer",
+  
+	"version": "2021.04.02",
+  
+	"description": "NewNamer replaces a given name with a new one on websites you visit.",
+  
+	"browser_action": {
+		"default_title": "NewNamer",
+		"default_icon": "imgs/newnamer_logo300.png",
+		"default_popup": "popup.html"
+	},
+  
+	"icons": { 
+		"16": "imgs/newnamer_logo16.png",
+		"32": "imgs/newnamer_logo32.png",
+		"48": "imgs/newnamer_logo48.png",
+		"128": "imgs/newnamer_logo128.png" 
+	},
+
+	"content_scripts": [{
+		"matches": ["<all_urls>"],
+		"js": ["main.js"],
+		"run_at": "document_start"
+	}],
+	
+  "permissions": ["storage", "activeTab"],
+  
+  "manifest_version": 2
+}
