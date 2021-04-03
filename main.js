@@ -126,6 +126,7 @@ function recurse(data, x) {
 // only run if our rules tell us to run. If we're supposed to run, run the initialization
 function init() {
 	chrome.storage.local.get(null, function(data) { 
+		console.log(Object.keys(data));
 		if(data['allof'] == undefined) {
 			chrome.storage.local.set({allof:true}, function(){
 				console.log("a");

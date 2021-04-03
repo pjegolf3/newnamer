@@ -306,7 +306,7 @@ table = [ document.getElementById("table00"), document.getElementById("table01")
 // buttons for refernece
 add_entry = [ document.getElementById("add_entry00"), document.getElementById("add_entry01")];
 add_entry[0].onclick = function() { make_input_row(0); add_entry[0].style.visibility = "hidden"; };
-add_entry[1].onclick = function() { make_input_row(1); add_entry[0].style.visibility = "hidden"; };
+add_entry[1].onclick = function() { make_input_row(1); add_entry[1].style.visibility = "hidden"; };
 select = document.getElementById("select");
 select.onchange = function() { toggle_allof(false); };
 

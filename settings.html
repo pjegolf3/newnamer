@@ -1,33 +1,15 @@
 <html>
 	<head>
 		<title>Settings</title>
-		<link rel="icon" href="imgs/bones048.png" type="image/x-icon"/>
+		<link rel="icon" href="imgs/newnamer_logo48.png" type="image/x-icon"/>
 		<link href="settingstyle.css" rel="stylesheet" type="text/css"></link>
 	</head>
 	<body>
 		<div class="blue">
-			<h1><img src="imgs/bones048.png"></img> Deadname-B-Gon <img src="imgs/bones048.png"></img></h1>
-			<span class="title">Settings</span>
+			<h1><img src="imgs/newnamer_logo16.png" /> NewNamer Settings</h1>
 		</div>
 		
-		<div class="biggroup">
-		
-		<p class="lemon">To replace the name "Lila" with the name "Marcello", write "Lila" in the first column and "Marcello" in the second. The 3rd column is checked by default. Unchecking it would result in "Lilac" being replaced with "Marcelloc" in this scenario. The 4th column is unchecked by default. Checking it would result in "lila" not being replaced, since "lila" does not match "Lila". The 5th column is checked by default. By default "LILA" would be replaced with "MARCELLO", and "lila" with "marcello".</p>
-		<table id="table00" class="lemon">
-			<tr>
-				<td class="col1row1">Name</td>
-				<td class="col1row1">To be replaced with</td>
-				<td class="col2row1">Match whole name only</td>
-				<td class="col2row1">Case sensitive</td>
-				<td class="col2row1">Match all caps, all lower-case & 1st letter capitalized.</td>
-				<td class="col2row1"></td>
-			</tr>
-		</table>
-		<input type="button" value="Add entry" id="add_entry00"></input>
-		
-		
-		<p class="pink">Name replacement will run on <select id="select"> <option value="allof">all of</option><option value="allexcept">all except</option></select> the domains listed here. Note that you may have to list a given website more than once. For example, <span class="monospace">wikipedia.org</span> and <span class="monospace">en.wikipedia.org</span> are different domains. Note also that the "www" which appears in many website links is important. Here, <span class="monospace">www.time.gov</span> and <span class="monospace">time.gov</span> are considered different domains. This is a little tedious, and could possibly be streamlined in the future, but for now it is the most reliable way to follow your preferences correctly.</p>
-		
+		<h2>Websites To Change:</h2>
 		<table id="table01" class="pink">
 			<tr>
 				<td class="col1row1">Domain</td>
@@ -35,14 +17,33 @@
 			</tr>
 		</table>
 		<input type="button" value="Add entry" id="add_entry01"></input>
+		<p class="pink">Name replacement will run on <select id="select"> <option value="allof">all of</option><option value="allexcept">all except</option></select> the domains listed here. Note that you may have to list a given website more than once. For example, <span class="monospace">wikipedia.org</span> and <span class="monospace">en.wikipedia.org</span> are different domains. Note also that the "www" which appears in many website links is important. Here, <span class="monospace">www.time.gov</span> and <span class="monospace">time.gov</span> are considered different domains. This is a little tedious, and could possibly be streamlined in the future, but for now it is the most reliable way to follow your preferences correctly.</p>
 		
+		<hr/>
+
+		<h2>New Names:</h2>
+		<table id="table00" class="lemon">
+			<tr>
+				<td class="col1row1">Old Name</td>
+				<td class="col1row1">New Name</td>
+				<td class="col2row1">Match whole name only</td>
+				<td class="col2row1">Case sensitive</td>
+				<td class="col2row1">Match all caps, all lower-case & 1st letter capitalized.</td>
+				<td class="col2row1"></td>
+			</tr>
+		</table>
+		<input type="button" value="Add entry" id="add_entry00"></input>
+		<p class="lemon">To replace the name "Lila" with the name "Marcello", write "Lila" in the first column and "Marcello" in the second. The 3rd column is checked by default. Unchecking it would result in "Lilac" being replaced with "Marcelloc" in this scenario. The 4th column is unchecked by default. Checking it would result in "lila" not being replaced, since "lila" does not match "Lila". The 5th column is checked by default. By default "LILA" would be replaced with "MARCELLO", and "lila" with "marcello".</p>
+
+		<hr/>
+
+		<h2>Advanced Options:</h2>
 		<div class="lightgray">
 			<input type="button" id="pausebutton" value="Pause"</span></br>
 			<input type="button" id="clearbutton" value="Clear all data"></input><br/>
-			<a href="about.html" target="_blank">About Deadname-B-Gon.</a>
+			<a href="about.html" target="_blank">About NewNamer</a>
 		</div>
 		
-		</div>
 		<script src="settings.js"></script>
 	</body>
 </html>
